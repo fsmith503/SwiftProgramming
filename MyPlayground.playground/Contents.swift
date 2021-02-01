@@ -37,6 +37,9 @@ bulbTemperature = bulb.surfaceTemperature(forAmbientTemperature: ambientTemperat
 print("the bulb's temperature is \(bulbTemperature)")
 
 enum shapeDimension {
+    // point has no associated vale - it is dimensionless
+    case point
+    
     // square's associated blaue is teh length of one side
     case square(side: Double)
     
@@ -45,6 +48,8 @@ enum shapeDimension {
     
     func area() -> Double {
         switch self {
+        case .point:
+            return 0
         case let .square(side: side):
             return side * side
         
@@ -56,6 +61,8 @@ enum shapeDimension {
 
 var squareShape = shapeDimension.square(side: 10.0)
 var rectShape = shapeDimension.rectangle(width: 5.0, height: 10.0)
+var pointShape = shapeDimension.point
 
 print("square's area = \(squareShape.area())")
 print("rectangle's area = \(rectShape.area())")
+print("point's area = \(pointShape.area())")
