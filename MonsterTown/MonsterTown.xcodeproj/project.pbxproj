@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7D5188F625C78A75006029D2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5188F525C78A75006029D2 /* main.swift */; };
+		7D5188FE25C78B65006029D2 /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5188FD25C78B65006029D2 /* Town.swift */; };
+		7D51890125C78EF1006029D2 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D51890025C78EF1006029D2 /* Monster.swift */; };
+		7D51890425C78FBC006029D2 /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D51890325C78FBC006029D2 /* Zombie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		7D5188F225C78A75006029D2 /* MonsterTown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MonsterTown; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5188F525C78A75006029D2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7D5188FD25C78B65006029D2 /* Town.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
+		7D51890025C78EF1006029D2 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		7D51890325C78FBC006029D2 /* Zombie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				7D5188F525C78A75006029D2 /* main.swift */,
+				7D51890325C78FBC006029D2 /* Zombie.swift */,
+				7D51890025C78EF1006029D2 /* Monster.swift */,
+				7D5188FD25C78B65006029D2 /* Town.swift */,
 			);
 			path = MonsterTown;
 			sourceTree = "<group>";
@@ -120,6 +129,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5188F625C78A75006029D2 /* main.swift in Sources */,
+				7D51890425C78FBC006029D2 /* Zombie.swift in Sources */,
+				7D51890125C78EF1006029D2 /* Monster.swift in Sources */,
+				7D5188FE25C78B65006029D2 /* Town.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
