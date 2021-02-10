@@ -8,9 +8,16 @@
 import Foundation
 
 struct Town {
+    static let world = "Earth"
     let region = "Middle"
-    var population = 5_422
+    //var population = 5_422
     var numberOfStopLights = 4
+    
+    var population = 5_422 {
+        didSet(oldPopulation) {
+            print("the population has changed to \(population) from \(oldPopulation)")
+        }
+    }
     
     
     enum Size {
