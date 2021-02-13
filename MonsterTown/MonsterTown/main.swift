@@ -10,7 +10,10 @@ import Foundation
 print("Hello, World!")
 
 //var myTown = Town()
-var myTown = Town(numberOfStopLights: 6, population: 10_000)
+//var myTown = Town(numberOfStopLights: 6, population: 10_000)
+var myTown = Town(region: "West",
+                  population: 10_000,
+                  stoplights: 6)
 myTown.printDescription()
 let myTownSize = myTown.townSize
 print(myTownSize)
