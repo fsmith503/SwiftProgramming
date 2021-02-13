@@ -24,7 +24,7 @@ class Monster {
         }
     }
     
-    init(town: Town?, monsterName: String){
+    required init(town: Town?, monsterName: String){
         self.town = town
         name = monsterName
     }
