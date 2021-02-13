@@ -26,21 +26,22 @@ print("Size: \(myTown.townSize); population:\(myTown.population)")
 //genericMonster.town = myTown
 //genericMonster.terrorizeTown()
 
-let fredTheZombie = Zombie(limp: false, fallingApart: false, town: myTown, monsterName: "Fred")
+var fredTheZombie: Zombie? = Zombie(limp: false, fallingApart: false, town: myTown, monsterName: "Fred")
 //fredTheZombie.town = myTown
-fredTheZombie.terrorizeTown()
-fredTheZombie.town?.printDescription()
+fredTheZombie?.terrorizeTown()
+fredTheZombie?.town?.printDescription()
 //(fredTheZombie as! Zombie).walksWithLimp = true
 
 var convenientZombie = Zombie(limp: true, fallingApart: false)
 
-print("victim pool: \(fredTheZombie.victimPool)")
-fredTheZombie.victimPool = 500
-print("Victim pool : \(fredTheZombie.victimPool)")
+print("victim pool: \(String(describing: fredTheZombie?.victimPool))")
+fredTheZombie?.victimPool = 500
+print("Victim pool : \(String(describing: fredTheZombie?.victimPool))")
 print(Zombie.spookyNoise)
 if Zombie.isTerrifying {
     print("Run away!")
 }
+fredTheZombie = nil
 //print("population: \(String(describing: fredTheZombie.town?.population))")
 
 
