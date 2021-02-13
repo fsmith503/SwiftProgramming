@@ -11,15 +11,16 @@ print("Hello, World!")
 
 //var myTown = Town()
 //var myTown = Town(numberOfStopLights: 6, population: 10_000)
-var myTown = Town(population: 10_000,
+var myTown = Town(population: 0,
                   stoplights: 6)
-myTown.printDescription()
-let myTownSize = myTown.townSize
-print(myTownSize)
+myTown?.printDescription()
+let myTownSize = myTown?.townSize
+print(String(describing: myTownSize))
 //print("Population: \(myTown.population) number of stoplights: \(myTown.numberOfStopLights)")
 //myTown.printDescription()
-myTown.changePopulation(by: 1_000_000)
-print("Size: \(myTown.townSize); population:\(myTown.population)")
+myTown?.changePopulation(by: 1_000_000)
+//print("Size: \(myTown.townSize); population:\(myTown.population)")
+print("Size: \(String(describing: myTown?.townSize)) population: \(String(describing: myTown?.population))")
 //myTown.printDescription()
 
 //let genericMonster = Monster()
