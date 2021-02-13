@@ -11,8 +11,7 @@ print("Hello, World!")
 
 //var myTown = Town()
 //var myTown = Town(numberOfStopLights: 6, population: 10_000)
-var myTown = Town(region: "West",
-                  population: 10_000,
+var myTown = Town(population: 10_000,
                   stoplights: 6)
 myTown.printDescription()
 let myTownSize = myTown.townSize
@@ -27,8 +26,8 @@ print("Size: \(myTown.townSize); population:\(myTown.population)")
 //genericMonster.town = myTown
 //genericMonster.terrorizeTown()
 
-let fredTheZombie = Zombie()
-fredTheZombie.town = myTown
+let fredTheZombie = Zombie(limp: false, fallingApart: false, town: myTown, monsterName: "Fred")
+//fredTheZombie.town = myTown
 fredTheZombie.terrorizeTown()
 fredTheZombie.town?.printDescription()
 //(fredTheZombie as! Zombie).walksWithLimp = true

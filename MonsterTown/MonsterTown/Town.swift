@@ -25,6 +25,11 @@ struct Town {
         self.population = population
         numberOfStopLights = stoplights
     }
+
+	init(population: Int, stoplights: Int){
+        self.init(region: "N/A", population: population, stoplights: stoplights)
+		//self.init(region: "N/A", population: population, stoplights: stoplights)
+	}
     
     
     
