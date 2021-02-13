@@ -14,7 +14,8 @@ protocol TabularDataSource {
 
 
 //func printTable(_ data: [[String]], withColumnLabels columnLabels: [String]){
-func printTable(_ dataSource: TabularDataSource){
+func printTable(_ dataSource: TabularDataSource & CustomStringConvertible){
+    print("Table: \(dataSource)")
     // create header row containing column headers
     var headerRow = "|"
     
@@ -57,9 +58,13 @@ struct Person {
     let yearsOfExperience: Int
 }
 
-struct Department: TabularDataSource {
+struct Department: TabularDataSource, CustomStringConvertible {
     let name: String
     var people = [Person]()
+    
+    var description: String {
+        return "Department (\(name)"
+    }
     
     init(name: String){
         self.name = name
@@ -106,7 +111,14 @@ var department = Department(name: "Engineering")
 
 
 department.add(Person(name: "Eva", age: 30, yearsOfExperience: 6))
+printTable(department)
 //department.add(Person(name: "Saleh", age: 40, yearsOfExperience: 18))
 
 //department.add(Person(name: "Amit", age: 50), yearsOfExperience: 20))
+
+let operationsDataSource: TabularDataSource = Department(name: "Operations")
+let engineeringDataSource = department as TabularDataSource
+
+let mikey = Person(name: "Mikey", age: 37, yearsOfExperience: 10)
+mikey is TabularDataSource
 
