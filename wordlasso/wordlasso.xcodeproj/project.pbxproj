@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7D6DE16D2601A50F00C91504 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6DE16C2601A50F00C91504 /* main.swift */; };
 		7D6DE1752601A52900C91504 /* WordFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6DE1742601A52900C91504 /* WordFinder.swift */; };
+		7D6DE1792601AC8E00C91504 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6DE1782601AC8E00C91504 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6DE1792601AC8E00C91504 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +83,9 @@
 			dependencies = (
 			);
 			name = wordlasso;
+			packageProductDependencies = (
+				7D6DE1782601AC8E00C91504 /* ArgumentParser */,
+			);
 			productName = wordlasso;
 			productReference = 7D6DE1692601A50F00C91504 /* wordlasso */;
 			productType = "com.apple.product-type.tool";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 7D6DE1602601A50F00C91504;
+			packageReferences = (
+				7D6DE1772601AC8E00C91504 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 7D6DE16A2601A50F00C91504 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,6 +297,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D6DE1772601AC8E00C91504 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D6DE1782601AC8E00C91504 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D6DE1772601AC8E00C91504 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D6DE1612601A50F00C91504 /* Project object */;
 }
