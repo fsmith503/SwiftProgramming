@@ -19,6 +19,7 @@ struct ContentView: View {
                 //#warning("the task title is hardcoded")
                 let task = Task(title: newTaskTitle)
                 taskStore.add(task)
+                newTaskTitle = ""
             }.disabled(newTaskTitle.isEmpty)
         }.padding()
     }

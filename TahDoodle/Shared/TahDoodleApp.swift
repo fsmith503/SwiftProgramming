@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct TahDoodleApp: App {
+    let taskStore = TaskStore()
     var body: some Scene {
         WindowGroup {
             TaskListView(taskStore: .sample)
