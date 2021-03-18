@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TaskListView: View {
     
-    var taskStore: TaskStore
+    @ObservedObject var taskStore: TaskStore
     
     var body: some View {
         List {

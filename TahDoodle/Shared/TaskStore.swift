@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
-class TaskStore {
+class TaskStore: ObservableObject {
     
-    private(set) var tasks: [Task] = []
+    @Published private(set) var tasks: [Task] = []
     
     func add(_ task: Task) {
         tasks.append(task)
@@ -37,3 +38,9 @@ extension TaskStore {
     }()
 }
 #endif
+
+struct TaskStore_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}
