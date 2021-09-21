@@ -14,7 +14,7 @@
 		7D977E9126FA21BC00761C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D977E8F26FA21BC00761C22 /* LaunchScreen.storyboard */; };
 		7D977E9C26FA21BC00761C22 /* LootLogger2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D977E9B26FA21BC00761C22 /* LootLogger2Tests.swift */; };
 		7D977EA726FA21BC00761C22 /* LootLogger2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D977EA626FA21BC00761C22 /* LootLogger2UITests.swift */; };
-		7D977EB526FA23F000761C22 /* ItemsViweController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D977EB426FA23F000761C22 /* ItemsViweController.swift */; };
+		7D977EB526FA23F000761C22 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D977EB426FA23F000761C22 /* ItemsViewController.swift */; };
 		7D977EB726FA24CA00761C22 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D977EB626FA24CA00761C22 /* Item.swift */; };
 		7D977EB926FA283F00761C22 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D977EB826FA283F00761C22 /* ItemStore.swift */; };
 /* End PBXBuildFile section */
@@ -50,7 +50,7 @@
 		7D977EA226FA21BC00761C22 /* LootLogger2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LootLogger2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D977EA626FA21BC00761C22 /* LootLogger2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLogger2UITests.swift; sourceTree = "<group>"; };
 		7D977EA826FA21BC00761C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D977EB426FA23F000761C22 /* ItemsViweController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViweController.swift; sourceTree = "<group>"; };
+		7D977EB426FA23F000761C22 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		7D977EB626FA24CA00761C22 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7D977EB826FA283F00761C22 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +105,7 @@
 			children = (
 				7D977E8426FA21BB00761C22 /* AppDelegate.swift */,
 				7D977E8626FA21BB00761C22 /* SceneDelegate.swift */,
-				7D977EB426FA23F000761C22 /* ItemsViweController.swift */,
+				7D977EB426FA23F000761C22 /* ItemsViewController.swift */,
 				7D977E8A26FA21BB00761C22 /* Main.storyboard */,
 				7D977EB626FA24CA00761C22 /* Item.swift */,
 				7D977EB826FA283F00761C22 /* ItemStore.swift */,
@@ -266,7 +266,7 @@
 			files = (
 				7D977EB726FA24CA00761C22 /* Item.swift in Sources */,
 				7D977EB926FA283F00761C22 /* ItemStore.swift in Sources */,
-				7D977EB526FA23F000761C22 /* ItemsViweController.swift in Sources */,
+				7D977EB526FA23F000761C22 /* ItemsViewController.swift in Sources */,
 				7D977E8526FA21BB00761C22 /* AppDelegate.swift in Sources */,
 				7D977E8726FA21BB00761C22 /* SceneDelegate.swift in Sources */,
 			);
