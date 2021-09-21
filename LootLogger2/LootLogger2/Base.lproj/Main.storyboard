@@ -15,13 +15,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="sk8-nW-Wjy">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZo-Qu-uAV">
+                                    <rect key="frame" x="211" y="15" width="195" height="14"/>
+                                    <state key="normal" title="Add"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjh-45-IPo">
+                                    <rect key="frame" x="8" y="15" width="195" height="14"/>
+                                    <state key="normal" title="Edit"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="pZo-Qu-uAV" secondAttribute="bottom" constant="15" id="7vn-pL-HlY"/>
+                                <constraint firstItem="wjh-45-IPo" firstAttribute="top" secondItem="sk8-nW-Wjy" secondAttribute="top" constant="15" id="9ei-dq-mtY"/>
+                                <constraint firstItem="pZo-Qu-uAV" firstAttribute="top" secondItem="sk8-nW-Wjy" secondAttribute="top" constant="15" id="Lig-6Y-f4z"/>
+                                <constraint firstItem="wjh-45-IPo" firstAttribute="centerY" secondItem="sk8-nW-Wjy" secondAttribute="centerY" id="NrJ-tX-6mx"/>
+                                <constraint firstAttribute="bottom" secondItem="wjh-45-IPo" secondAttribute="bottom" constant="15" id="PrF-rU-3G7"/>
+                                <constraint firstItem="pZo-Qu-uAV" firstAttribute="leading" secondItem="wjh-45-IPo" secondAttribute="trailing" constant="8" id="RCF-k7-seu"/>
+                                <constraint firstItem="pZo-Qu-uAV" firstAttribute="centerY" secondItem="sk8-nW-Wjy" secondAttribute="centerY" id="at9-Tc-5xg"/>
+                                <constraint firstItem="wjh-45-IPo" firstAttribute="leading" secondItem="sk8-nW-Wjy" secondAttribute="leading" constant="8" id="n5a-ld-Uz9"/>
+                                <constraint firstAttribute="trailing" secondItem="pZo-Qu-uAV" secondAttribute="trailing" constant="8" id="of2-Dd-BJH"/>
+                                <constraint firstItem="pZo-Qu-uAV" firstAttribute="width" secondItem="wjh-45-IPo" secondAttribute="width" id="slJ-wU-Sjn"/>
+                            </constraints>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LZd-v0-3l5">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="AZe-9g-Xx2" detailTextLabel="Q0N-Xx-M5c" style="IBUITableViewCellStyleValue1" id="LZd-v0-3l5">
+                                <rect key="frame" x="0.0" y="68.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LZd-v0-3l5" id="ak0-YQ-vHl">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AZe-9g-Xx2">
+                                            <rect key="frame" x="20" y="15" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Q0N-Xx-M5c">
+                                            <rect key="frame" x="361" y="15" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
