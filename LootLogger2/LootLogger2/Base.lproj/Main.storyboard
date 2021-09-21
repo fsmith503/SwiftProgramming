@@ -22,10 +22,16 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZo-Qu-uAV">
                                     <rect key="frame" x="211" y="15" width="195" height="14"/>
                                     <state key="normal" title="Add"/>
+                                    <connections>
+                                        <action selector="addNewItem:" destination="gfp-Ym-7PI" eventType="touchUpInside" id="hY4-So-sG4"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjh-45-IPo">
                                     <rect key="frame" x="8" y="15" width="195" height="14"/>
                                     <state key="normal" title="Edit"/>
+                                    <connections>
+                                        <action selector="toggleEditingMode:" destination="gfp-Ym-7PI" eventType="touchUpInside" id="fs1-rc-nPZ"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
