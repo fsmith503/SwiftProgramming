@@ -56,6 +56,25 @@ class ItemsViewController: UITableViewController {
         return itemStore.allItems.count
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath){
+        // If the tableviwe is asking to commit a delete command...
+        if editingStyle == .delete {
+            let item = itemStore.allItems[indexPath.row]
+            
+            // Remove the item from the store
+            itemStore.removeItem(item)
+            
+            //Also remove that row from the table view with an animation
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexpath: IndexPath, to destinationIndexPath: IndexPath){
+        // update the model
+        itemStore.moveItem(from: sourceIndexpath.row, to: destinationIndexPath.row)
+    }
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Create an instnace of UITableViewCell with default appearance
